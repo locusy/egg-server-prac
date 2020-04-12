@@ -1,5 +1,11 @@
 # egg-server
-
+    1、基于插件的swagger-doc接口定义
+    2、统一异常处理
+    3、基于拓展的helper统一响应处理
+    4、validate接口格式检查
+    5、三层结构
+    6、jwt统一权鉴
+    7、文件上传
 
 
 ## QuickStart

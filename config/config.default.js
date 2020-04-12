@@ -40,13 +40,20 @@ module.exports = appInfo => {
     }, 
   }
 
-   // add your middleware config here
-   config.middleware = ['errorHandler'];
+  // add your middleware config here
+  config.middleware = ['errorHandler'];
 
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
   };
+
+  // 以/api开头的需要鉴权
+  config.jwt = {
+    secret: 'Great4-M',
+    enable: true, // default is false
+    match: /^\/api/, // optional
+ }
 
   return {
     ...config,
