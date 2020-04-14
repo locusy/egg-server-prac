@@ -32,6 +32,8 @@ module.exports = appInfo => {
 
   config.mongoose = {
     url: 'mongodb://47.94.208.76:27017/test',
+    // user: 'admin',
+    // password: '111111',
     options: {
       // useMongoClient: true,
       autoReconnect: true,
